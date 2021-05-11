@@ -1,0 +1,420 @@
+/*reset css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+button:active,
+button:focus {
+    border: none;
+    outline: none !important;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+}
+
+
+/*main style*/
+
+.hotel-box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 150px auto;
+    height: 91px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+/*hotel-box__name*/
+
+.hotel-box__name {
+    max-width: 282px;
+    width: 100%;
+}
+
+.hotel-box__name::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    opacity: 0.81;
+    background-color: #e4e4e4;
+    border-radius: 1px;
+    margin-left: 280px;
+    margin-top: -32px;
+}
+
+.hotel-box__name_title {
+    font-family: 'Myriad Pro';
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin-top: 27px;
+    margin-left: 50px;
+}
+
+.hotel-box__name_img {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.hotel-box__name_text {
+    font-family: 'Fira Sans';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #6b6b6b;
+    margin-left: 7px;
+}
+
+
+/*hotel-box__date */
+
+.hotel-box__date {
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+}
+
+.hotel-box__date::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    opacity: 0.81;
+    background-color: #e4e4e4;
+    border-radius: 1px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.hotel-box__date_in {
+    margin-top: 27px;
+    margin-left: 25px;
+}
+
+.hotel-box__date_title {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+.hotel-box__date_img {
+    display: flex;
+    margin-top: 10px;
+}
+
+.data-img {
+    margin-right: 10px;
+}
+
+.hotel-box__date_text {
+    font-family: 'Fira Sans';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #383838;
+}
+
+.hotel-box__date_point {
+    width: 3px;
+    height: 3px;
+    background-color: #9a9a9a;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.hotel-box__date_out {
+    margin-top: 27px;
+    margin-left: 30px;
+}
+
+.hotel-box__date_icon {
+    margin-left: 120px;
+    margin-top: -21px;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark:hover {
+    cursor: pointer;
+}
+
+.checkmark_right {
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color: #8b9198;
+    left: 11px;
+    top: 6px;
+}
+
+.checkmark_left {
+    position: absolute;
+    width: 9px;
+    height: 3px;
+    background-color: #8b9198;
+    left: 5px;
+    top: 12px;
+}
+
+
+/*hotel-box__input*/
+
+.hotel-box__input {
+    display: flex;
+}
+
+
+.hotel-box__input-item {
+    margin-top: 27px;
+    margin-left: 35px;
+}
+
+.hotel-box__input-item:first-child {
+    margin-left: 25px;
+}
+
+.hotel-box__input_title {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin-bottom: 4px;
+}
+
+
+.hotel-box__input_btn-1 {
+    margin-top: -28px;
+    margin-left: 35px;
+    width: 12px;
+    height: 7px;
+    background: linear-gradient(to right bottom, transparent 50%, #8b9198 50%) left / 50% 100% no-repeat,
+        linear-gradient(to left bottom, transparent 50%, #8b9198 50%) right / 50% 100% no-repeat;
+    cursor: pointer;
+}
+
+.hotel-box__input_btn-1:hover {
+    background: linear-gradient(to right bottom, transparent 50%, #ed9915 50%) left / 50% 100% no-repeat,
+        linear-gradient(to left bottom, transparent 50%, #ed9915 50%) right / 50% 100% no-repeat;
+}
+
+.hotel-box__input_btn-2 {
+    margin-left: 35px;
+    margin-top: 14px;
+    width: 12px;
+    height: 7px;
+    background: linear-gradient(to right top, transparent 50%, #8b9198 50%) left / 50% 100% no-repeat,
+        linear-gradient(to left top, transparent 50%, #8b9198 50%) right / 50% 100% no-repeat;
+    cursor: pointer;
+}
+
+.hotel-box__input_btn-2:hover {
+    background: linear-gradient(to right top, transparent 50%, #ed9915 50%) left / 50% 100% no-repeat,
+        linear-gradient(to left top, transparent 50%, #ed9915 50%) right / 50% 100% no-repeat;
+    cursor: pointer;
+}
+
+.input-box {
+    width: 30px;
+    height: 27px;
+    border: 1px solid #8b9198;
+    text-align: center;
+    font-family: 'Avenir Next Cyr';
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    color: #8b9198;
+}
+
+/*hotel-box__button*/
+
+.hotel-box__add {
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    opacity: 0.58;
+    background-color: #fdb038;
+    margin-top: 29px;
+    margin-left: 15px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.hotel-box__add:active {
+    background-color: #8b9198;
+}
+
+.hotel-box__button {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    width: 175px;
+    height: 63px;
+    background-color: #ed9915;
+    border-radius: 2px;
+    margin-left: 21px;
+    margin-top: 15px;
+}
+
+.hotel-box__button:hover {
+    cursor: pointer;
+}
+
+.hotel-box__button:active {
+    background-color: #8b9198;
+}
+
+
+/*media*/
+
+@media (max-width: 992px) {
+    .hotel-box__name {
+        width: 230px;
+    }
+    .hotel-box__name_title{
+        margin-left: 10px;
+    }
+    .hotel-box__name_img {
+        margin-left: 10px;
+    }
+    .hotel-box__name::after{
+        margin-left: 220px;
+    }
+    .hotel-box__date{
+        width: 250px;
+    }
+    .hotel-box__date_in{
+        margin-left: 5px;
+    }
+    .data-img{
+        width: 20px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    .hotel-box__date_img{
+        width: 158px;
+    }
+    .hotel-box__date_point{
+        margin-left: 20px;
+    }
+    .hotel-box__date_out{
+        margin-left: 5px;
+    }
+    .hotel-box__input {
+        margin-left: 40px;
+    }
+    .hotel-box__add{
+        margin-left: 7px;
+    }
+    .hotel-box__button{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px){
+    .hotel-box{
+        border-radius: 0;
+        height: 180px;
+    }
+    .hotel-box__input{
+        margin-top: 80px;
+        margin-left: -400px;
+    }
+    .hotel-box__add{
+        margin-top: 120px;
+        margin-left: 100px;
+    }
+    .hotel-box__button{
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    .hotel-box__date_in {
+        margin-left: 170px;
+    }
+    .hotel-box__name::after {
+        margin-left: 305px;
+    }
+} 
+@media (max-width: 700px){
+    .hotel-box__date_in {
+        margin-left: 100px;
+    }
+    .hotel-box__name::after {
+        margin-left: 260px;
+    }
+}
+@media (max-width: 640px){
+    .hotel-box__date_in {
+        margin-left: 50px;
+    }
+    .hotel-box__name::after {
+        margin-left: 240px;
+    }
+    .hotel-box__add {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 580px){
+    .hotel-box__input {
+        margin-left: -485px;
+    }
+    .hotel-box__date_in {
+        margin-left: 10px;
+    }
+    .hotel-box__name::after {
+        display: none;
+    }
+    .checkmark{
+        margin-left: -16px;
+    }
+    .hotel-box__date_point {
+       display: none;
+    }
+    .hotel-box__date_img {
+        width: 130px;
+    }
+}
+@media (max-width: 480px){
+    .hotel-box__name {
+        width: 200px;
+    }
+    .hotel-box__date_text{
+        font-size: 15px;
+    }
+    .hotel-box__name_text{
+        font-size: 15px;
+    }
+    .hotel-box__input {
+        margin-left: -470px;
+    }
+}    

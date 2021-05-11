@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Hotel Box</title>
+</head>
+
+<body>
+    <div class="hotel-box">
+        <div class="hotel-box__name">
+            <div class="hotel-box__name_title">Место или название отеля</div>
+            <div class="hotel-box__name_img">
+                <img src="img/ellips.png" alt="">
+                <div class="hotel-box__name_text">Введите здесь место</div>
+            </div>
+        </div>
+        <div class="hotel-box__date">
+            <div class="hotel-box__date_in">
+                <div class="hotel-box__date_title">Заезд</div>
+                <div class="hotel-box__date_img">
+                    <img class="data-img" src="img/vector.png" alt="">
+                    <div class="hotel-box__date_text">07 февраля</div>
+                    <div class="hotel-box__date_point"></div>
+                </div>
+            </div>
+            <div class="hotel-box__date_out">
+                <div class="hotel-box__date_title">Выезд</div>
+                <div class="hotel-box__date_text">22 февраля</div>
+                <div class="hotel-box__date_icon">
+                    <span class="checkmark">
+                        <div class="checkmark_right"></div>
+                        <div class="checkmark_left"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-box__input">
+            <div class="hotel-box__input-item">
+                <div class="hotel-box__input_title">Номера</div>
+
+                <div class="hotel-box__input_btn">
+                    <input class="input-box" type="text" value="0">
+                    <div id="hotel_btn" class="hotel-box__input_btn-1" data-direction="plus"></div>
+                    <div id="hotel_btn" class="hotel-box__input_btn-2" data-direction="minus"></div>
+                </div>
+
+            </div>
+            <div class="hotel-box__input-item">
+                <div class="hotel-box__input_title">Взрослые</div>
+
+                <div class="hotel-box__input_btn">
+                    <input class="input-box" type="text" value="0">
+                    <div id="hotel_btn" class="hotel-box__input_btn-1" data-direction="plus"></div>
+                    <div id="hotel_btn" class="hotel-box__input_btn-2" data-direction="minus"></div>
+                </div>
+
+            </div>
+            <div class="hotel-box__input-item">
+                <div class="hotel-box__input_title">Дети</div>
+
+                <div class="hotel-box__input_btn">
+                    <input class="input-box" type="text" value="0">
+                    <div id="hotel_btn" class="hotel-box__input_btn-1" data-direction="plus"></div>
+                    <div id="hotel_btn" class="hotel-box__input_btn-2" data-direction="minus"></div>
+                </div>
+
+            </div>
+        </div>
+            <div class="hotel-box__add">
+                <img src="img/pryamougolnik.png" alt="">
+            </div>
+            <button class="hotel-box__button">Найти</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
